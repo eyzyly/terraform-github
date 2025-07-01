@@ -1,0 +1,32 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Terraform crash log files
+crash.log
+
+# Terraform plan files
+*.tfplan
+
+# Terraform override files
+*.override.tf
+*.override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration
+.terraformrc
+terraform.rc
+
+# Terraform provider and module downloads
+.terraform/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
+terraform.tfvars
