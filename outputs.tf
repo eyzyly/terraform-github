@@ -1,4 +1,6 @@
-output "html_url" {
-     value = github_repository.demo.html_url 
-     description = "URL to the repository on the web." 
+output "repository_urls" { 
+     value = { 
+          for name, repo in github_repository.repos : name => 
+          repo.html_url 
+     }
 }
